@@ -13,7 +13,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://i.pinimg.com/736x/56/eb/6e/56eb6ee1368f318adb3743ae5cb060fa--t-cricket-pakistan-photos.jpg");
+             background-image: url("https://images.thestar.com/oxFHfywrRmZ2nXtgLxz7Z5t8GIA=/1200x816/smart/filters:cb(2700061000):format(webp)/https://www.thestar.com/content/dam/thestar/sports/2015/02/19/cricket-fans-want-more-world-cup-events-in-toronto/cricket-india-pakistan.jpg");
              background-attachment: fixed;
              background-size: cover
          }}
