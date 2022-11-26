@@ -4,9 +4,24 @@ import pandas as pd
 import numpy as np
 import xgboost
 from xgboost import XGBRegressor
-import sklearn
 
 pipe = pickle.load(open('pipe.pkl','rb'))
+
+
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
 
 teams = ['Australia',
  'India',
@@ -56,6 +71,9 @@ cities = ['Colombo',
  'Trinidad']
 
 st.title('Cricket Score Predictor')
+
+add_bg_from_url() 
+
 
 col1, col2 = st.beta_columns(2)
 
